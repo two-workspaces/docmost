@@ -4,5 +4,7 @@
   "description": "Docmost wiki and docs, pinned release, owner account ready on boot",
   "category": "Other",
   "image": "https://cdn.jsdelivr.net/gh/selfhst/icons/svg/docmost.svg",
-  "card_desc": "Docmost team wiki: real-time collaborative pages, spaces and permissions, with the workspace owner created on first boot."
+  "card_desc": "Docmost team wiki: real-time collaborative pages, spaces and permissions, with the workspace owner created on first boot.",
+  "id": "92475632-a729-4762-9e05-71982233b1e9",
+  "published": true
 }

@@ -36,7 +36,7 @@ The stack is three services: Docmost, Postgres and Redis.
 
 **Email.** Docmost sends invitations and password resets by email. Railway only allows outbound SMTP on the Pro plan, so on other plans use [Postmark](https://postmarkapp.com/), which Docmost supports over HTTPS: on the Docmost service set `MAIL_DRIVER=postmark`, `POSTMARK_TOKEN` and `MAIL_FROM_ADDRESS`. On Pro, any SMTP provider works with `SMTP_HOST`, `SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD` and `MAIL_FROM_ADDRESS`. Without email, add members from Settings → Members and share the invite link yourself.
 
-**Memory.** Around 350 MB at idle: about 250 MB for Docmost, 100 MB for Postgres and a few MB for Redis. It fits every plan.
+**Memory.** Around 650 MB at idle: about 500 MB for Docmost, 140 MB for Postgres and a few MB for Redis. It runs on the Trial plan and above; the Free plan's 0.5 GB per service is too tight for Docmost.
 
 **Backups.** Enable Railway's volume backups on the Postgres volume (pages, users, history) and the Docmost volume (attachments). To keep attachments in S3 or R2 instead, set `STORAGE_DRIVER=s3` and the `AWS_S3_*` variables on the Docmost service.
 
